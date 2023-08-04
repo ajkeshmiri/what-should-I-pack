@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,42 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <div class="wrapper">
         <h1>What Should I Pack?</h1>
-        <p>The age old question. How many pairs of socks do I need? What is the weather like? What if I shit myself four times? We've all been there.</p>
+        <p>The age old question. What is the weather like? How many pairs of socks do I need? What if I shit myself four
+            times? We've all been there. Let me help.</p>
+        <form action="#">
+            <h3>Where are you going?</h3> <input type="text" placeholder="city, country">
+            <h3>Are you flying or driving?</h3>
+            <input type="radio" id="flying" name="flying" value="flying">
+            <label for="flying">Flying</label>
+            <input type="radio" id="driving" name="driving" value="driving">
+            <label for="driving">Driving</label>
+            <h3>For how many days?(including travel days)</h3>
+            <input type="number" placeholder="number">
+            <h3>Any special events? How many?</h3>
+            <input type="radio" id="yevent" name="yevent" value="yevent">
+            <label for="yevent">Yes</label>
+            <input type="radio" id="nevent" name="nevent" value="nevent">
+            <label for="nevent">No</label>
+            <h3>Going swimming?</h3>
+            <input type="radio" id="yswim" name="yswim" value="yswim">
+            <label for="yswim">Yes</label>
+            <input type="radio" id="=nswim" name="=nswim" value="=nswim">
+            <label for="=nswim">No</label>
+            <br><br><button>Pack for me!</button>
+        </form>
+
+        <div class="result">
+            <h2>Here's your list!</h2>
+            <table></table>
+            <p>*Keep in mind this is just an estimate based upon your answers, the weather during your trip, and hygiene
+                best practices. </p>
+            <h3></h3>
+        </div>
     </div>
 </body>
+
 </html>
