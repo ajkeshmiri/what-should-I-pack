@@ -17,21 +17,23 @@
         <form action="#">
             <h3>Where are you going?</h3> <input type="text" placeholder="city, country">
             <h3>Are you flying or driving?</h3>
-            <input type="radio" id="flying" name="flying" value="flying">
+            <input type="radio" id="flying" name="transport" value="flying">
             <label for="flying">Flying</label>
-            <input type="radio" id="driving" name="driving" value="driving">
+            <input type="radio" id="driving" name="transport" value="driving">
             <label for="driving">Driving</label>
             <h3>For how many days?(including travel days)</h3>
-            <input type="number" placeholder="number">
+            <input type="number" placeholder="number" id="days">
             <h3>Any special events? How many?</h3>
-            <input type="radio" id="yevent" name="yevent" value="yevent">
+            <input type="radio" id="events" name="events" value="yevent">
             <label for="yevent">Yes</label>
-            <input type="radio" id="nevent" name="nevent" value="nevent">
+            <input type="number" id="events">
+            <input type="radio" id="events" name="events" value="nevent">
             <label for="nevent">No</label>
             <h3>Going swimming?</h3>
-            <input type="radio" id="yswim" name="yswim" value="yswim">
+            <input type="radio" id="swim" name="swim" value="yswim">
             <label for="yswim">Yes</label>
-            <input type="radio" id="=nswim" name="=nswim" value="=nswim">
+            <input type="number" id="swim" >
+            <input type="radio" id="=swim" name="swim" value="=nswim">
             <label for="=nswim">No</label>
             <br><br><button>Pack for me!</button>
         </form>
