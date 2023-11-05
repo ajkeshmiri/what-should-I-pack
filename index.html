@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What Should I Pack?</title>
     <link rel="stylesheet" href="style.css">
-
+    
 </head>
 
 <body>
@@ -17,28 +17,35 @@
         <form action="#">
             <h3>Where are you going?</h3> <input type="text" placeholder="city, country">
             <h3>Are you flying or driving?</h3>
-            <input type="radio" id="flying" name="transport" value="flying">
+            <input type="radio" id="flying" name="transport" value="flying" checked>
             <label for="flying">Flying</label>
+
             <input type="radio" id="driving" name="transport" value="driving">
             <label for="driving">Driving</label>
+
             <h3>For how many days?(including travel days)</h3>
-            <input type="number" placeholder="number" id="days">
+            <input type="number" placeholder="number of days?" id="days">
+
             <h3>Any special events? How many?</h3>
-            <input type="radio" id="yevent" name="events" value="yevent">
+            <input type="radio" id="yevent" name="events" value="yevent" checked>
             <label for="yevent">Yes</label>
-            <input type="number" id="events">
+            <input type="number" id="event" placeholder="number of times?">
+
             <input type="radio" id="nevent" name="events" value="nevent">
             <label for="nevent">No</label>
+
             <h3>Going swimming?</h3>
-            <input type="radio" id="yswim" name="swim" value="yswim">
+            <input type="radio" id="yswim" name="swim" value="yswim" checked>
             <label for="yswim">Yes</label>
-            <input type="number" id="swim" >
-            <input type="radio" id="nswim" name="swim" value="=nswim">
+            <input type="number" id="swim" placeholder="number of times?">
+
+            <input type="radio" id="nswim" name="swim" value="nswim">
             <label for="nswim">No</label>
+
             <br><br><button>Pack for me!</button>
         </form>
 
-        <div class="result">
+        <div class="result hideItem">
             <h2>Here's your list!</h2>
             <table></table>
             <p>*Keep in mind this is just an estimate based upon your answers, the weather during your trip, and hygiene
@@ -46,6 +53,7 @@
             <h3></h3>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
